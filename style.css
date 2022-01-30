@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Mono&display=swap');
+
 :root {
   --default-font-size: 10px;
+  --font-family: 'Roboto', sans-serif;
+
 }
 
 *,
@@ -9,20 +13,27 @@
 }
 
 body {
+  font-family: var(--font-family);
   font-size: var(--default-font-size);
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding : 0.5rem;
 }
 
 .nav-bar {
   display: flex;
   flex-direction: row;
+}
+
+.nav-link {
+  margin-left: 1.2rem;
 }
 
 #header-logo,
@@ -31,6 +42,51 @@ header {
 }
 
 .nav-link > a {
-    color: black;
     text-decoration: none;
 }
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin : 1.5rem;
+}
+
+#email {
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+button {
+  font-size : 1rem;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+#features,
+#review,
+#pricing {
+  margin-top: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin : 0;
+  padding: 0;
+}
+
+#video {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.price-list {  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
