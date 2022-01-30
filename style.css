@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Mono&display=swap");
 
 :root {
   --default-font-size: 10px;
-  --font-family: 'Roboto', sans-serif;
+  --font-family: "Roboto", sans-serif;
 
+  --text-light: #f5eedc;
+  --text-dark: #362222;
+  --color-background: #f4dfba;
+  --color-body: #eec373;
+  --color-navbar: #ca965c;
+  --color-price-items: #ffeead;
+  --color-footer: #694e4e;
 }
 
 *,
@@ -12,7 +19,12 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--color-background);
+}
+
 body {
+  background-color: var(--color-body);
   font-family: var(--font-family);
   font-size: var(--default-font-size);
   max-width: 800px;
@@ -21,10 +33,11 @@ body {
 }
 
 header {
+  background-color: var(--color-navbar);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding : 0.5rem;
+  padding: 0.8rem;
 }
 
 .nav-bar {
@@ -38,11 +51,16 @@ header {
 
 #header-logo,
 .nav-link {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .nav-link > a {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+#header-logo {
+  color: var(--text-light);
 }
 
 #form {
@@ -50,7 +68,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin : 1.5rem;
+  margin: 1.5rem;
 }
 
 #email {
@@ -59,9 +77,17 @@ header {
 }
 
 button {
-  font-size : 1rem;
+  font-size: 1rem;
   padding: 0.25rem;
   margin-top: 0.5rem;
+}
+
+#form i {
+  padding-right: 0.25rem;
+}
+
+#form h1 {
+  text-align: center;
 }
 
 #features,
@@ -70,23 +96,133 @@ button {
   margin-top: 1.5rem;
 }
 
-ul {
-  list-style-type: none;
-  margin : 0;
-  padding: 0;
-}
-
-#video {
-  max-width: 100%;
+#features {
+  max-width: 50em;
   display: block;
   margin: 0 auto;
 }
 
-.price-list {  
+#features > h1,
+#review > h1,
+#pricing > h1 {
+  text-align: center;
+}
+
+.feature-items > h2 {
+  font-size: medium;
+}
+
+.feature-items > p {
+  font-size: small;
+  text-align: justify;
+}
+
+.feature-items > h2 > i {
+  margin-right: 0.3em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: calc(500px / 16 * 9);
+}
+
+.price-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 2em;
   align-items: baseline;
 }
 
+.price-items {
+  background-color: var(--color-price-items);
+  min-width: 200px;
+  padding: 0.5em 1.5em 2em 1.5em;
+  border: 0.2em solid var(--color-navbar);
+  border-radius: 0.5em;
+}
 
+.price-items > h3 {
+  font-size: medium;
+  text-align: center;
+}
+
+.price-items > ul {
+  text-align: center;
+}
+
+.price-items li {
+  font-size: small;
+  margin-bottom: 0.3rem;
+}
+
+.price-items > span {
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  margin-top: 1.2rem;
+}
+
+#footer {
+  background-color: var(--color-footer);
+  color: var(--text-light);
+
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1em 0.5em;
+  margin-top: 2em;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-items {
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+#footer span {
+  margin-right: 0.5em;
+  margin-top: 0.25em;
+}
+
+@media (max-width: 500px) {
+  #video {
+    width: auto;
+    height: auto;
+  }
+
+  #header,
+  .nav-bar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-items {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .nav-link {
+    margin : 0;
+    margin-top: 0.3em;
+  }
+
+  .price-list{
+    flex-direction: column;
+    align-items: center;
+  }
+}
