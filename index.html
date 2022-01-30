@@ -1,102 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Watch Shop</title>
-</head>
+    <title>Document</title>
 
-<body>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-    
-    <div class="container">
-        <div class="header">
-            <div class="header-title">
-                <i class="bi bi-watch"></i>
-                Watch Shop
-            </div>
-            <div class="nav-bar">
-                <div class="nav-link">Features</div>
-                <div class="nav-link">How It Works</div>
-                <div class="nav-link">Pricing</div>
-            </div>
-        </div>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/icons/">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <form action="" id="form">
-            <h3>More information & Promotions about Smartwatch</h3>
-            <input type="email" id="email" placeholder="Your email here">
-            <input type="submit" id="submit" value="Subscribe">
-        </form>
+  <body>
+    <header id="header">
+      <div id="header-logo">
+        <i id="header-img" class="bi bi-smartwatch"></i>
+        <span>SmartWatch Logo</span>
+      </div>
 
-        <div class="features">
-            <div class="features-items">
-                <div class="hero">
-                    <i class="bi bi-hand-thumbs-up"></i>
-                    <h3>Premium Material</h3>
-                </div>
-                <p>Jam tangan pintar dibuat dengan material berkualitas terbaik.</p>
-            </div>
-            <div class="features-items">
-                <div class="hero">
-                    <i class="bi bi-droplet"></i>
-                    <h3>Waterproof & Fireproof</h3>
-                </div>
-                <p>Jam tangan pintar yang kami hadirkan dapat bertahan di bawah air. Dilengkapi juga dengan sertifikasi
-                    IP68 atau IP67.</p>
-            </div>
-            <div class="features-items">
-                <div class="hero">
-                    <i class="bi bi-truck"></i>
-                    <h3>Fast Shipping</h3>
-                </div>
-                <p>Kami menjamin pengiriman tercepat dan terbaik agar anda dapat dengan segera menikmati Smartwatch yang
-                    anda idamkan.</p>
-            </div>
-        </div>
+      <div class="nav-bar">
+        <div class="nav-link"><a href="#features">Features</a></div>
+        <div class="nav-link"><a href="#review">Review</a></div>
+        <div class="nav-link"><a href="#pricing">Pricing</a></div>
+      </div>
+    </header>
 
-        <div id="container-video">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/MmhCd6C6M8s"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <h1>High Quality, and Worth the money!</h1>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <button><i class="bi bi-pencil"></i>Get Started</button>
+    </form>
 
-        <div class="pricing">
-            <div class="pricing-items">
-                <h4>Smartwatch P1</h4>
-                <h5>Rp100.000,00</h5>
-                <ul>
-                    <li>Tahan Air</li>
-                    <li>Garansi 3 Bulan</li>
-                    <li>Android Kitkat 3</li>
-                </ul>
-            </div>
-            <div class="pricing-items">
-                <h4>Smartwatch P2</h4>
-                <h5>Rp120.000,00</h5>
-                <ul>
-                    <li>Tahan Air dan Api</li>
-                    <li>Garansi 6 Bulan</li>
-                    <li>Android Lolipop 3</li>
-                    <li>Bluetooth</li>
-                </ul>
-            </div>
-            <div class="pricing-items">
-                <h4>Smartwatch P3</h4>
-                <h5>Rp150.000,00</h5>
-                <ul>
-                    <li>Tahan Air dan Api</li>
-                    <li>Garansi 9 Bulan</li>
-                    <li>Android Macaron X</li>
-                    <li>Bluetooth</li>
-                    <li>GPS</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
+    <section id="features">
+      <div class="feature-items">
+        
+        <h2><i class="bi bi-droplet"></i>Waterproof</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          reiciendis sequi incidunt, minus alias similique nihil neque saepe
+          quae mollitia voluptates natus atque repellat eveniet architecto,
+          suscipit officia officiis. Eveniet?
+        </p>
+      </div>
 
+      <div class="feature-items">
+        <h2><i class="bi bi-gear"></i>High Quality Material</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut debitis
+          impedit, praesentium saepe ipsa nihil quisquam earum nesciunt sint
+          quos voluptate magni accusamus. Molestiae explicabo temporibus nulla
+          error minima eius.
+        </p>
+      </div>
+
+      <div class="feature-items">
+        <h2><i class="bi bi-lightbulb"></i>Futuristic Design</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+          ipsam voluptatum tempore eaque animi earum rerum sunt atque, tenetur
+          iure illo at suscipit magnam necessitatibus numquam repellendus cumque
+          facilis! Dolor?
+        </p>
+      </div>
+    </section>
+
+    <section id="review">
+      <h2>Smartwatch Review</h2>
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/MmhCd6C6M8s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2>Pricing</h2>
+      <div class="price-items">
+        <h3>Basic Smartwatch</h3>
+        <ul>
+          <li>Android 8</li>
+          <li>1.8" Screen Size</li>
+          <li>Dual Core Processor</li>
+          <li>Plastic & Metal Material</li>
+          <li>Pure Glass</li>
+        </ul>
+        <span class="price">Rp 2.000.000,00</span>
+      </div>
+      <div class="price-items">
+        <h3>Ultimate Smartwatch</h3>
+        <ul>
+          <li>Android 12</li>
+          <li>2.4" Screen Size</li>
+          <li>Octa Core Processor</li>
+          <li>Carbon Material</li>
+          <li>Gorilla Glass 6</li>
+        </ul>
+        <span class="price">Rp 5.000.000,00</span>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
 </html>
